@@ -11,22 +11,52 @@
             width: 100%;
             height: 100%;
         }
+
+        #map-container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 2300px;
+            cursor: default;
+            position: relative;
+            z-index: 0;
+        }
+
+        .nav {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            z-index: 1;
+
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .anchorBL {display: none;}
     </style>
 </head>
 <div id="map-container"></div>
+<!-- <ul class="nav">
+    <li onclick="map.setMapStyleV2({ styleJson: STYLE.yellow})">1</li>
+    <li onclick="map.setMapStyleV2({ styleJson: STYLE.oceanic})">2</li>
+    <li onclick="map.setMapStyleV2({ styleJson: STYLE.tokyoNight})">3</li>
+    <li onclick="map.setMapStyleV2({ styleJson: STYLE.darkGolden})">4</li>
+</ul> -->
 <body>
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=dyXRu0GP6L4GdzWUQVwwY4GVP07OdZAG"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/yellow.js"></script>
     <script type="text/javascript" src="js/oceanic.js"></script>
     <script type="text/javascript" src="js/tokyoNight.js"></script>
+    <script type="text/javascript" src="js/darkGolden.js"></script>
     <script>
         let map = new BMapGL.Map("map-container");
         // 地图自定义样式
        let point = new BMapGL.Point(118.78528107617186, 32.041342297053866); // 中心位置
-        map.setMapStyleV2({ styleJson: STYLE.tokyoNight });
         map.enableScrollWheelZoom(true);
         map.centerAndZoom(point, 15);
+
+        map.setMapStyleV2({ styleJson: STYLE.oceanic });
     </script>
 </body>
 

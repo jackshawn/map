@@ -1,9 +1,9 @@
-STYLE.tokyoNight = JSON.parse(JSON.stringify(STYLE.common.concat(
+STYLE.darkGolden = JSON.parse(JSON.stringify(STYLE.common.concat(
     {
         "featureType": "land", // 陆地
         "elementType": "geometry",
         "stylers": {
-            "color": "#16161eff"
+            "color": "#242422ff"
         }
     },
     {
@@ -11,7 +11,7 @@ STYLE.tokyoNight = JSON.parse(JSON.stringify(STYLE.common.concat(
         "elementType": "geometry",
         "stylers": {
             "visibility": "on",
-            "color": "#b73b95ff"
+            "color": "#c2934bff"
         }
     },
     {
@@ -19,35 +19,39 @@ STYLE.tokyoNight = JSON.parse(JSON.stringify(STYLE.common.concat(
         "elementType": "geometry",
         "stylers": {
             "visibility": "on",
-            "color": "#0db3d0ff"
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "green", // 绿地
         "elementType": "geometry",
         "stylers": {
-            "color": "#9dcc69ff"
+            "visibility": "on",
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "medical", // 医院
         "elementType": "geometry",
         "stylers": {
-            "color": "#e87087ff"
+            "visibility": "on",
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "education", // 高校
         "elementType": "geometry",
         "stylers": {
-            "color": "#79a1f6ff"
+            "visibility": "on",
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "manmade", // 人造区域
         "elementType": "geometry",
         "stylers": {
-            "color": "#ba99f6ff"
+            "visibility": "on",
+            "color": "#c2934bff"
         }
     },
 
@@ -56,49 +60,49 @@ STYLE.tokyoNight = JSON.parse(JSON.stringify(STYLE.common.concat(
         "featureType": "highway",
         "elementType": "geometry.fill",
         "stylers": {
-            "color": "#79a1f6ff"
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "nationalway",
         "elementType": "geometry.fill",
         "stylers": {
-            "color": "#f7768eff"
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "provincialway",
         "elementType": "geometry.fill",
         "stylers": {
-            "color": "#f7768eff"
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "cityhighway",
         "elementType": "geometry.fill",
         "stylers": {
-            "color": "#f7768eff"
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "arterial",
         "elementType": "geometry.fill",
         "stylers": {
-            "color": "#f7768eff"
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "tertiaryway",
         "elementType": "geometry.fill",
         "stylers": {
-            "color": "#f99a62ff"
+            "color": "#c2934bff"
         }
     },
     {
         "featureType": "fourlevelway",
         "elementType": "geometry.fill",
         "stylers": {
-            "color": "#f99a62ff"
+            "color": "#c2934bff"
         }
     },
 )))
